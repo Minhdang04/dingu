@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="dangnhap.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Đăng nhập</title>
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #cdffcd;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .signin {
+    width: 500px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 20px;
+  }
+
+  .login {
+    width: 500px;
+    padding: 16px;
+    margin: 0 auto;
+    background-color: white;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+  input[type=text]:focus,
+  input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+</style>
+
+<body>
+  <form role="form" autocomplete="off" onsubmit="signIn(event);">
+    <div class="signin">
+      <h1>Đăng nhập</h1>
+      <p>Vui lòng điền thông tin để đăng nhập</p>
+      <hr>
+      <label for="username"><b>Tên đăng nhập</b></label>
+      <input type="text" placeholder="username" name="username" id="email" required>
+      <label for="password"><b>Mật khẩu</b></label>
+      <input type="password" placeholder="password" name="pwd" id="pwd" required>
+      <hr>
+      <button type="submit" class="submit">Đăng nhập</button>
+    </div>
+  </form>
+  <div class="signin login">
+    <p>Bạn chưa có tài khoản ? <a href="./signup.html">Đăng ký</a>.</p>
+  </div>
+  <script src="./signin.js"></script>
+</body>
+
+</html>
+

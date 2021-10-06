@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" href="dangnhap.css" /> -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #ecf0ff 50%, #ecf0ff 50%);
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .register {
+        width: 500px;
+        padding: 16px;
+        margin: 0 auto;
+        background-color: white;
+    }
+
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus,
+    input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    .submit {
+        background-color: #0900bd;
+        color: white;
+        padding: 15px 18px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .submit:hover {
+        opacity: 1;
+    }
+
+    .login {
+        background-color: #ffffff;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <form role="form" autocomplete="off" onsubmit="signUp(event);">
+        <div class="register">
+            <h1>Đăng ký</h1>
+            <hr>
+            <div class="form-group"><b>Họ</b>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required>
+            </div>
+            <div class="form-group"><b>Ten</b>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required>
+            </div>
+            <label for="username"><b>Tên đăng nhập</b></label>
+            <input type="text" placeholder="username" name="username" id="email" required> 
+            <label for="password"><b>Mật khẩu</b></label>
+            <input type="password" placeholder="password" name="pwd" id="pwd" required>
+            <hr>
+            <button type="submit" class="submit">Đăng ký</button>
+        </div>
+        <div class="register login">
+            <p>Bạn đã có tài khoản rồi? <a href="./signin.html">Đăng nhập</a>.</p>
+        </div>
+    </form>
+    <script src="./signin.js"></script>
+</body>
+
+</html>
