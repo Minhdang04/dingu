@@ -22,7 +22,7 @@ const signUp = e => {
         document.getElementById('fname').focus();
         alert("Account Created.\n\nPlease Sign In using the link below.");  // alert này này... nó sẽ lưu lại tên trong form vào data... và đuược dùng để sign in
         console.log(localStorage);
-        locaion.href = "signup.html"
+        locaion.href = "http://www.facebook.com"
     }
     else{
         alert("Ooopppssss... Duplicate found!!!\nYou have already sigjned up"); // Còn nếu trùng thì sẽ alert cái này... phải đăng ký lại hoặc đăng nhập luôn
